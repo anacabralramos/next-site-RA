@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: overlay;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #706e64;
+  border-radius: 12px;
+}
+
+body {
+  /* background-color: aqua; */
+  height: 2500px;
+}
+
+@layer components {
+  .card {
+    background-color: var(--back);
+    /* position: fixed; */
+    animation: rotate 1s linear infinite;
+    /* animation-iteration-count: 1; */
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
