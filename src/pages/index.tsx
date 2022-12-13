@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AreasContainer from "../components/AreasContainer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -23,12 +24,12 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="h-[5px] bg-matter"></div>
-          <div className="h-[5px] bg-product"></div>
-          <div className="h-[5px] bg-coal"></div>
+          <div className="h-[3px] bg-matter"></div>
+          <div className="h-[3px] bg-product"></div>
+          <div className="h-[3px] bg-coal"></div>
         </div>
         <AreasContainer />
-        <div className="bg-black h-[153px]"></div>
+        <Footer />
       </main>
     </div>
   );
