@@ -4,6 +4,8 @@
 
 body {
   overflow: overlay;
+  background-color: aqua;
+  height: 1454px;
 }
 
 *::-webkit-scrollbar {
@@ -14,24 +16,25 @@ body {
   border-radius: 12px;
 }
 
-body {
-  /* background-color: aqua; */
-  height: 2500px;
-}
-
 @layer components {
   .card {
-    background-color: var(--back);
-    /* position: fixed; */
-    animation: rotate 1s linear infinite;
-    /* animation-iteration-count: 1; */
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
+    position: sticky;
+    top: 0;
+    background: cover;
   }
 }
 
 @keyframes rotate {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  from {
+    /* opacity: 0; */
+    transform: translateY(500px);
+  }
+  to {
+    opacity: 1;
   }
 }

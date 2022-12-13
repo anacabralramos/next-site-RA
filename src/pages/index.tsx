@@ -28,6 +28,7 @@ export default function Home() {
           <div className="h-[5px] bg-coal"></div>
         </div>
         <AreasContainer />
+        <div className="bg-black h-[153px]"></div>
       </main>
     </div>
   );

@@ -17,7 +17,8 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       animation: {
-        appear: "rotate 1s linear infinite",
+        // appear: "rotate 1s linear infinite",
+        appear: "fadeInRight 1s ease-in-out",
       },
       keyframes: {
         rotate: {
