@@ -6,7 +6,13 @@ import Header from "../components/Header";
 const playground = () => {
   return (
     <div>
-      <CardAreas text={""} size={"small"} pngName={""} top={1} />
+      <CardAreas
+        text={""}
+        size={"small"}
+        pngName={""}
+        top={1}
+        type={"DESIGN"}
+      />
     </div>
   );
 };
