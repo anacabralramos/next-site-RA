@@ -11,7 +11,30 @@ const Header = () => {
           src="/logo2.png"
           alt="logo"
         />
-        <Menu opcoes={["Home", "Áreas", "O Programa", "Projetos"]} />
+        <Menu
+          opcoes={[
+            {
+              title: "Home",
+              active: true,
+              redirect: "",
+            },
+            {
+              title: "Áreas",
+              active: false,
+              redirect: "",
+            },
+            {
+              title: "O Programa",
+              active: false,
+              redirect: "",
+            },
+            {
+              title: "Projetos",
+              active: false,
+              redirect: "",
+            },
+          ]}
+        />
         <Acordeon />
         {/* <div className="flex justify-between pt-3 w-[500px] text-lg"> */}
         {/* <div className="flex justify-between w-[270px] ">
