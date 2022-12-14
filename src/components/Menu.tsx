@@ -15,18 +15,17 @@ const Menu = ({ opcoes }: itemsMenu) => {
     <div className="flex gap-[18px]">
       {opcoes.map((opcao) => (
         <div>
-          {/* <p className="text-white transition ease-in delay-75 hover:text-lime cursor-pointer text-[17px]">
-            {opcao.title}
-          </p> */}
-          <p
-            className={`transition ease-in delay-75 hover:text-lime cursor-pointer text-[17px] ${
-              opcao.active
-                ? "text-lime underline underline-offset-4"
-                : "text-white"
-            }`}
-          >
-            {opcao.title}
-          </p>
+          <a href="#areas">
+            <p
+              className={`transition ease-in delay-75 hover:text-lime cursor-pointer text-[17px] ${
+                opcao.active
+                  ? "text-lime underline underline-offset-4"
+                  : "text-white"
+              }`}
+            >
+              {opcao.title}
+            </p>
+          </a>
         </div>
       ))}
     </div>

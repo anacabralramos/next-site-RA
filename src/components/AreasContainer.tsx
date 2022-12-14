@@ -17,7 +17,7 @@ const AreasContainer = () => {
   });
 
   return (
-    <div className="relative">
+    <div className="relative" id="areas">
       <div className="bg-lime h-[715px] flex card">
         <p className="text-[58px] ml-[180px] mt-[270px] font-semibold leading-[60px]">
           Tenha a liberdade de escolher onde atuar em qualquer momento da sua

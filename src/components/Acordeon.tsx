@@ -8,7 +8,7 @@ import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 const Acordeon = () => {
   return (
     <div>
-      <button className="flex cursor-pointer w-max text-white hover:text-lime group ">
+      <button className="flex cursor-pointer w-max text-white transition ease-in delay-75 hover:text-lime group ">
         <h1>Acessibilidade </h1>
         <div className="inline-block align-baseline">
           <ArrowDropDownIcon className="transform group-hover:rotate-180 transition duration-300" />
