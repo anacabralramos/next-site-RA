@@ -13,20 +13,15 @@ export default function Home() {
       </Head>
 
       <main className="h-screen font-roboto bg-lime">
-        <div className=" bg-[url('../../public/background.jpg')] bg-cover bg-center bg-opacity-0 h-[80%]">
-          <div className="absolute inset-0 bg-black bg-opacity-75 h-[80%] ">
+        <div className=" bg-[url('../../public/background.jpg')] bg-cover bg-center  h-[77%]">
+          <div className="absolute inset-0 bg-black bg-opacity-75 h-[77%] ">
             <Header />
             <div className="h-full w-full pl-[250px] pt-[80px] font-normal">
-              <p className="align-middle mt-20 w-[900px] text-8xl text-lime">
+              <p className="align-middle mt-[100px] w-[700px] text-7xl text-lime">
                 ¤Venha se tornar →→ um Rethinker®
               </p>
             </div>
           </div>
-        </div>
-        <div>
-          <div className="h-[3px] bg-matter"></div>
-          <div className="h-[3px] bg-product"></div>
-          <div className="h-[3px] bg-coal"></div>
         </div>
         <AreasContainer />
         <Footer />

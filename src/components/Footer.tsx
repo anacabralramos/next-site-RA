@@ -5,9 +5,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <div className="bg-black h-[153px]">
-      <div className="h-[3px] w-full bg-coal"></div>
+      {/* <div className="h-[3px] w-full bg-coal"></div> */}
       <div className="h-[3px] w-full bg-product"></div>
-      <div className="h-[3px] w-full bg-matter"></div>
+      {/* <div className="h-[3px] w-full bg-matter"></div> */}
       <div className="pt-[20px] flex flex-col gap-7">
         <div className="flex justify-center">
           <a href="https://www.linkedin.com/company/rethinkdigitalco/mycompany/verification/">
