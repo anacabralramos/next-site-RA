@@ -17,7 +17,14 @@ const CardAreas = ({ title, description, icon }: CardProps) => {
     <div className="h-[200px] bg-white w-[445px] rounded-lg overflow-hidden">
       <div className="flex justify-between items-center pr-[30px] rounded-full h-[80px]">
         <div className="flex items-center">
-          <img src={`${icon}`} className="scale-50" alt="" />
+          {/* <img src={`${icon}`} className="scale-50" alt="" /> */}
+          <Image
+            src={`${icon}`}
+            className="scale-50"
+            alt=""
+            width={120}
+            height={110}
+          />
           <h1 className="text-xl font-semibold">{title}</h1>
         </div>
         <div>

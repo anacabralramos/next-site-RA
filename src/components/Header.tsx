@@ -27,16 +27,7 @@ const Header = ({ logo, menu, TitleAcordeon, MenuAcordeon }: HeaderProps) => {
   return (
     <div className="h-[85px] w-screen flex justify-center items-end">
       <div className="flex items-end gap-[380px]">
-        {/* <Image
-          className="cursor-pointer w-[150px] h-[28px]"
-          src={"../../public/logo2.png"}
-          alt="logo"
-        ></Image> */}
-        <img
-          src={`${logo}`}
-          alt=""
-          className="cursor-pointer w-[150px] h-[28px]"
-        />
+        <Image src={`${logo}`} alt="" width={150} height={140} />
         <Menu
           opcoes={[
             {
