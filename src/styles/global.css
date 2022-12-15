@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import 'node_modules/tailwindcss/utilities.css'; */
+/* @import "../../node_modules/tailwindcss/utilities.css"; */
+/* @import "~tailwindcss/utilitários"; */
+
+body {
+  overflow: overlay;
+  /* height: 1454px; */
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  /* background-color: #706e64; */
+  border-radius: 12px;
+}
+
+@layer components {
+  .card {
+    position: sticky;
+    top: 0;
+    background: cover;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  from {
+    /* opacity: 0; */
+    transform: translateY(500px);
+  }
+  to {
+    opacity: 1;
+  }
+}
