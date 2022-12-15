@@ -22,7 +22,7 @@ interface HeaderProps {
 }
 
 const Header = ({ logo, menu, TitleAcordeon, MenuAcordeon }: HeaderProps) => {
-  console.log(logo);
+  // console.log(logo);
 
   return (
     <div className="h-[85px] w-screen flex justify-center items-end">
