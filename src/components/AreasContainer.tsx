@@ -57,7 +57,7 @@ const AreasContainer = ({
       <div className=" h-[100vh] w-[33.33%] card flex items-center">
         <div
           style={{ backgroundImage: urlLeft }}
-          className="bg-[100%] bg-cover h-[100%] w-full flex justify-center items-center pt-[200px]  overflow-hidden"
+          className="bg-[100%] bg-cover h-[85%] w-full flex justify-center items-center pt-[200px]  overflow-hidden"
         >
           <CardAreas
             title={LeftCard.title}
@@ -69,7 +69,7 @@ const AreasContainer = ({
       <div className=" h-[100vh] w-[33.33%] card ml-[66.66%] flex items-center">
         <div
           style={{ backgroundImage: urlRight }}
-          className="bg-[100%] bg-cover h-[100%] w-full flex justify-center items-center pt-[200px]"
+          className="bg-[100%] bg-cover h-[85%] w-full flex justify-center items-center pt-[200px]"
         >
           <CardAreas
             title={RightCard.title}
