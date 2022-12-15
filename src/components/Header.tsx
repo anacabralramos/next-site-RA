@@ -22,16 +22,21 @@ interface HeaderProps {
 }
 
 const Header = ({ logo, menu, TitleAcordeon, MenuAcordeon }: HeaderProps) => {
-  console.log(menu);
+  console.log(logo);
 
   return (
     <div className="h-[85px] w-screen flex justify-center items-end">
       <div className="flex items-end gap-[380px]">
-        <Image
+        {/* <Image
           className="cursor-pointer w-[150px] h-[28px]"
-          src={Logo}
+          src={"../../public/logo2.png"}
           alt="logo"
-        ></Image>
+        ></Image> */}
+        <img
+          src={`${logo}`}
+          alt=""
+          className="cursor-pointer w-[150px] h-[28px]"
+        />
         <Menu
           opcoes={[
             {
@@ -56,7 +61,11 @@ const Header = ({ logo, menu, TitleAcordeon, MenuAcordeon }: HeaderProps) => {
             },
           ]}
         />
-        <Acordeon />
+        <Acordeon
+          Option={MenuAcordeon.Option}
+          Option1={MenuAcordeon.Option1}
+          Title={TitleAcordeon}
+        />
       </div>
     </div>
   );
