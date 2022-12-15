@@ -2,6 +2,7 @@ import Head from "next/head";
 import AreasContainer from "../components/AreasContainer";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import OpeningSection from "../components/OpeningSection";
 
 export default function Home() {
   return (
@@ -13,16 +14,7 @@ export default function Home() {
       </Head>
 
       <main className="h-screen font-roboto bg-lime">
-        <div className=" bg-[url('../../public/background.jpg')] bg-cover bg-center  h-[77%]">
-          <div className="absolute inset-0 bg-black bg-opacity-75 h-[77%] ">
-            <Header />
-            <div className="h-full w-full pl-[250px] pt-[80px] font-normal">
-              <p className="align-middle mt-[100px] w-[700px] text-7xl text-lime">
-                ¤Venha se tornar →→ um Rethinker®
-              </p>
-            </div>
-          </div>
-        </div>
+        <OpeningSection />
         <AreasContainer />
         <Footer />
       </main>

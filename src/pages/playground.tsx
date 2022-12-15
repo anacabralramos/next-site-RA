@@ -7,7 +7,7 @@ import Menu from "../components/Menu";
 const playground = () => {
   return (
     <div>
-      <Menu opcoes={["Sobre", "História", "Projetos"]} />
+      {/* <Menu opcoes={["Sobre", "História", "Projetos"]} /> */}
       {/* <CardAreas
         text={""}
         size={"small"}
