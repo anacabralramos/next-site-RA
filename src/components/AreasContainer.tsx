@@ -33,6 +33,10 @@ const AreasContainer = ({
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // });
+  console.log(LeftCard.Background);
+  var urlLeft = `url('${LeftCard.Background}')`;
+  var urlMiddle = `url('${MiddleCard.Background}')`;
+  var urlRight = `url('${RightCard.Background}')`;
 
   return (
     <div className="relative" id="areas">
@@ -41,7 +45,10 @@ const AreasContainer = ({
           {Span}
         </p>
       </div>
-      <div className="h-[715px] bg-[url('../../public/meio.png')] bg-cover w-[33.35%] ml-[33.35%] card flex justify-center items-center">
+      <div
+        style={{ backgroundImage: urlMiddle }}
+        className="h-[715px] bg-cover w-[33.35%] ml-[33.35%] card flex justify-center items-center"
+      >
         <CardAreas
           title={MiddleCard.title}
           description={MiddleCard.Description}
@@ -49,7 +56,10 @@ const AreasContainer = ({
         />
       </div>
       <div className=" h-[715px] w-[33.35%] card flex items-center ">
-        <div className=" bg-[url('../../public/left.png')] bg-cover bg-[center_bottom_50%] h-[600px] w-full flex justify-center items-center pt-[200px]">
+        <div
+          style={{ backgroundImage: urlLeft }}
+          className=" bg-cover bg-[center_bottom_50%] h-[600px] w-full flex justify-center items-center pt-[200px]"
+        >
           <CardAreas
             title={LeftCard.title}
             description={LeftCard.Description}
@@ -58,7 +68,10 @@ const AreasContainer = ({
         </div>
       </div>
       <div className=" h-[715px] w-[33.35%] card ml-[66.66%] flex items-center">
-        <div className=" bg-[url('../../public/right.png')] bg-cover bg-[center_bottom_50%] h-[600px] w-full flex justify-center items-center pt-[200px]">
+        <div
+          style={{ backgroundImage: urlRight }}
+          className=" bg-cover bg-[center_bottom_50%] h-[600px] w-full flex justify-center items-center pt-[200px]"
+        >
           <CardAreas
             title={RightCard.title}
             description={RightCard.Description}

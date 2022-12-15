@@ -80,7 +80,7 @@ export default function Home({
           MiddleCard={MiddleCard}
           RightCard={RightCard}
         />
-        <Footer />
+        <Footer span1={footer.span1} span2={footer.span2} />
       </main>
     </div>
   );
