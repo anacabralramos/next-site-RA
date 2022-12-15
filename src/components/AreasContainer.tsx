@@ -33,21 +33,20 @@ const AreasContainer = ({
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // });
-  console.log(LeftCard.Background);
   var urlLeft = `url('${LeftCard.Background}')`;
   var urlMiddle = `url('${MiddleCard.Background}')`;
   var urlRight = `url('${RightCard.Background}')`;
 
   return (
     <div className="relative" id="areas">
-      <div className="bg-lime h-[715px] flex card">
-        <p className="text-[58px] ml-[180px] mt-[270px] font-semibold leading-[60px]">
+      <div className="bg-lime h-[100vh] flex card items-center">
+        <p className="text-[58px] ml-[180px] font-semibold leading-[60px]">
           {Span}
         </p>
       </div>
       <div
         style={{ backgroundImage: urlMiddle }}
-        className="h-[715px] bg-cover w-[33.35%] ml-[33.35%] card flex justify-center items-center"
+        className="h-[100vh] bg-cover w-[33.33%] ml-[33.33%] card flex justify-center items-center"
       >
         <CardAreas
           title={MiddleCard.title}
@@ -55,10 +54,10 @@ const AreasContainer = ({
           icon={MiddleCard.Icon}
         />
       </div>
-      <div className=" h-[715px] w-[33.35%] card flex items-center ">
+      <div className=" h-[100vh] w-[33.33%] card flex items-center">
         <div
           style={{ backgroundImage: urlLeft }}
-          className=" bg-cover bg-[center_bottom_50%] h-[600px] w-full flex justify-center items-center pt-[200px]"
+          className="bg-[100%] bg-cover h-[100%] w-full flex justify-center items-center pt-[200px]  overflow-hidden"
         >
           <CardAreas
             title={LeftCard.title}
@@ -67,10 +66,10 @@ const AreasContainer = ({
           />
         </div>
       </div>
-      <div className=" h-[715px] w-[33.35%] card ml-[66.66%] flex items-center">
+      <div className=" h-[100vh] w-[33.33%] card ml-[66.66%] flex items-center">
         <div
           style={{ backgroundImage: urlRight }}
-          className=" bg-cover bg-[center_bottom_50%] h-[600px] w-full flex justify-center items-center pt-[200px]"
+          className="bg-[100%] bg-cover h-[100%] w-full flex justify-center items-center pt-[200px]"
         >
           <CardAreas
             title={RightCard.title}
