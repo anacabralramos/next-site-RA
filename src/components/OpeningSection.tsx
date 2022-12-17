@@ -12,6 +12,7 @@ export default function OpeningSection({
   var url = `url('${background}')`;
   return (
     <div
+      id="home"
       className="bg-cover bg-center h-[77%]"
       style={{
         backgroundImage: url,

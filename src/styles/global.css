@@ -28,6 +28,14 @@ body {
     top: 0;
     background: cover;
   }
+
+  .div_header {
+    background-color: aqua;
+    /* height: 39px; */
+    /* height: var(--scroll); */
+    /* transition: decrease 0.3s ease; */
+    /* height: 39px; */
+  }
 }
 
 @keyframes rotate {
@@ -42,5 +50,15 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes decrease {
+  from {
+    height: 144px;
+    /* opacity: 0; */
+  }
+  to {
+    height: 55px;
+    /* opacity: 1; */
   }
 }

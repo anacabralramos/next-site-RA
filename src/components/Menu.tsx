@@ -11,11 +11,13 @@ type itemsMenu = {
 };
 
 const Menu = ({ opcoes }: itemsMenu) => {
+  // console.log(opcoes[0].);
+
   return (
     <div className="flex gap-[18px] ">
       {opcoes.map((opcao, key) => (
         <div key={key}>
-          <a href="#areas">
+          <a href={opcao.redirect}>
             <p
               className={`transition ease-in delay-75 hover:text-lime cursor-pointer text-[17px] ${
                 opcao.active
