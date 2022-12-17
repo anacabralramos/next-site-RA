@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import CardAreas from "./CardAreas";
-
-interface CardAtributes {
-  title: string;
-  Description: string;
-  Background: string;
-  Icon: string;
-}
+import { Card } from "../pages";
 interface AreasProps {
   Span: string;
-  LeftCard: CardAtributes;
-  MiddleCard: CardAtributes;
-  RightCard: CardAtributes;
+  LeftCard: Card;
+  MiddleCard: Card;
+  RightCard: Card;
 }
 
 const AreasContainer = ({
@@ -38,7 +32,7 @@ const AreasContainer = ({
   var urlRight = `url('${RightCard.Background}')`;
 
   return (
-    <div className="relative" id="areas">
+    <div className="relative">
       <div className="bg-lime h-[100vh] flex card items-center">
         <p className="text-[58px] ml-[180px] font-semibold leading-[60px]">
           {Span}
@@ -66,7 +60,10 @@ const AreasContainer = ({
           />
         </div>
       </div>
-      <div className=" h-[100vh] w-[33.33%] card ml-[66.66%] flex items-center">
+      <div
+        id="areas"
+        className=" h-[100vh] w-[33.33%] card ml-[66.66%] flex items-center"
+      >
         <div
           style={{ backgroundImage: urlRight }}
           className="bg-[100%] bg-cover h-[85%] w-full flex justify-center items-center pt-[200px]"

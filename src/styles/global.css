@@ -5,6 +5,10 @@
 /* @import "../../node_modules/tailwindcss/utilities.css"; */
 /* @import "~tailwindcss/utilitários"; */
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow: overlay;
   /* height: 1454px; */

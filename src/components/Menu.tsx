@@ -12,7 +12,7 @@ type itemsMenu = {
 
 const Menu = ({ opcoes }: itemsMenu) => {
   return (
-    <div className="flex gap-[18px]">
+    <div className="flex gap-[18px] ">
       {opcoes.map((opcao, key) => (
         <div key={key}>
           <a href="#areas">
