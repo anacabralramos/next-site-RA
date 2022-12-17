@@ -25,7 +25,7 @@ const Header = ({ logo, menu, TitleAcordeon, MenuAcordeon }: HeaderProps) => {
   // console.log(logo);
 
   return (
-    <div className="h-[85px] w-screen flex justify-center items-end">
+    <div className="absolute bg-transparents h-[85px] w-screen flex justify-center items-end z-50">
       <div className="flex items-end gap-[380px]">
         <Image src={`${logo}`} alt="" width={150} height={140} />
         <Menu
